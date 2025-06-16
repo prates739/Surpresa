@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vc é a Camily?</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Você é a Camily?</h1>
+    <div class="buttons">
+      <button onclick="responder('sim')">Sim</button>
+      <button onclick="responder('nao')">Não</button>
+    </div>
+    <p id="mensagem"></p>
+  </div>
+
+  <script>
+    function responder(resposta) {
+      if (resposta === 'sim') {
+        window.location.href = 'camily.html';
+      } else {
+        document.getElementById('mensagem').textContent = 'SAIA DAQUI ENTAO!';
+      }
+    }
+  </script>
+</body>
+</html>
